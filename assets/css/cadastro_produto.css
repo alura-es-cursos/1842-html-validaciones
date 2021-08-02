@@ -1,0 +1,8 @@
+.registry__description {
+  height: 15.75rem;
+}
+
+.registry__price-container,
+.registry__description-container {
+  width: 50%;
+}

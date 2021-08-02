@@ -1,0 +1,23 @@
+.registry-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.registry-card__icon-complete {
+  display: block;
+  width: 3.5rem;
+  height: 3.5rem;
+
+  margin-bottom: 1rem;
+
+  background-image: url(../img/checkmark.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.registry-card__title {
+  max-width: 20rem;
+}

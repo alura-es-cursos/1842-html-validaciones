@@ -1,0 +1,137 @@
+.formulario {
+  margin-top: 2rem;
+}
+
+.form__label {
+  font-size: var(--font-size-form-fieldset);
+  margin-bottom: 1rem;
+}
+
+.input-container {
+  font-weight: var(--font-weigth-input);
+  position: relative;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-sizing: border-box;
+}
+
+.input {
+  box-sizing: border-box;
+  border-bottom: 1px solid var(--secondary-color);
+  padding: 1.375rem 0.5rem 0.5rem;
+  height: 3.25rem;
+  width: 100%;
+}
+
+.input::placeholder {
+  visibility: hidden;
+  color: #00000000;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input-label {
+  position: absolute;
+  top: 1.375rem;
+  left: 0.5rem;
+  font-size: var(--font-size-input-label);
+
+  transition: all 0.25s;
+}
+
+.input:not(:placeholder-shown) + .input-label,
+.input:focus + .input-label {
+  font-size: 0.875rem;
+  top: 0.25rem;
+  transition: all 0.25s;
+}
+
+.input-container--invalid {
+  margin-bottom: 0.5rem;
+}
+
+.input-container--invalid .input {
+  border: 1px solid var(--warning-color);
+  border-radius: 7px;
+}
+
+.input-container--invalid .input-label {
+  color: var(--warning-color);
+}
+
+.input-message-error {
+  display: none;
+}
+
+.input-container--invalid .input-message-error {
+  color: var(--warning-color);
+  display: block;
+  margin-top: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.textarea {
+  box-sizing: border-box;
+  border: 1px solid var(--secondary-color);
+  padding: 0.5rem;
+  border-radius: 7px;
+  width: 100%;
+  min-height: 3rem;
+}
+
+.textarea-container {
+  position: relative;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: var(--font-weigth-input);
+}
+
+.textarea::placeholder {
+  visibility: hidden;
+}
+
+.textarea:focus {
+  outline: none;
+}
+
+.textarea-label {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  font-size: var(--font-size-input-label);
+  transition: all 0.25s;
+}
+
+.textarea:not(:placeholder-shown) + .textarea-label,
+.textarea:focus + .textarea-label {
+  font-size: 0.875rem;
+  top: -1.25rem;
+  transition: all 0.25s;
+}
+
+.textarea-container--invalid {
+  margin-bottom: 0.5rem;
+}
+
+.textarea-container--invalid .textarea {
+  border: 1px solid var(--warning-color);
+}
+
+.textarea-container--invalid .textarea-label {
+  color: var(--warning-color);
+}
+
+.textarea-mensagem-erro {
+  display: none;
+}
+
+.textarea-container--invalid .textarea-mensagem-erro {
+  display: block;
+  color: var(--warning-color);
+  margin-top: 0.5rem;
+  padding-left: 0.5rem;
+}
