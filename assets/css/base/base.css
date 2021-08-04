@@ -1,5 +1,5 @@
-@import url(_reset.css);
-@import url(_variables.css);
+@import url(reset.css);
+@import url(variables.css);
 
 body {
   background-color: var(--secondary-color);
